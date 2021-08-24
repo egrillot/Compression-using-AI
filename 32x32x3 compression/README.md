@@ -1,0 +1,79 @@
+# 32x32x3
+
+We are going to use the following structure of autoencoder :
+
+<table>
+	<tr>
+		<td>Encoder</td>
+		<td>Image encoded</td>
+    		<td>Decoder</td>
+	</tr>
+	<tr>
+		<td><img src="images/encoder.png"></td>
+    		<td><img src="images/encoded1.png"></td>
+    		<td><img src="images/decoder.png"></td>
+	</tr>
+</table>
+
+## Installation
+
+Please use the command below :
+
+~~~
+!python3 -m pip install --ignore-installed -r requirements.txt  
+~~~
+
+## Example & usage
+
+Start by instancing a model precising the shape of your data in ``input_shape`` :
+
+~~~
+model=Model(input_shape)
+~~~
+
+Then you can train your model as follows :
+
+~~~
+model.train(training_set, save_path=path/to/the/directory/to/save/models)
+~~~
+
+You can also load weights from a pre-trained model with methods ``model.load_autoencoder(self, path)`` , ``model.load_encoder(path)`` and ``model.load_decoder(path)`` . Now you
+can code and decode your data like below :
+
+~~~
+encoded=model.encode(data)
+decoded=model.decode(encoded)
+~~~
+
+In my case, I trained the model on the CIFAR-100 dataset and here are some results. First, during the training, we reached 0.0022 mse score : 
+
+<img src="images/training.png">
+
+After evaluating the autoencoder on the test set, we got a mse score of 0.0021918637212365866. Here are some results on the test set :
+
+<table>
+	<tr>
+		<td>Input</td>
+		<td><img src="images/test1.png"></td>
+    		<td><img src="images/test2.png"></td>
+    		<td><img src="images/test3.png"></td>
+    		<td><img src="images/test4.png"></td>
+    		<td><img src="images/test5.png"></td>
+	</tr>
+	<tr>
+		<td>Encoded</td>
+		<td><img src="images/encoded1.png"></td>
+    		<td><img src="images/encoded2.png"></td>
+    		<td><img src="images/encoded3.png"></td>
+    		<td><img src="images/encoded4.png"></td>
+    		<td><img src="images/encoded5.png"></td>
+	</tr>
+	<tr>
+		<td>Decoded</td>
+		<td><img src="images/decoded1.png"></td>
+    		<td><img src="images/decoded2.png"></td>
+    		<td><img src="images/decoded3.png"></td>
+    		<td><img src="images/decoded4.png"></td>
+    		<td><img src="images/decoded5.png"></td>
+	</tr>
+</table>
