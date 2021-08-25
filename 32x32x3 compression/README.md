@@ -58,7 +58,6 @@ After evaluating the autoencoder on the test set, we got a mse score of 0.002191
 		<td>Input</td>
 		<td><img src="images/test1.png" width=256 height=256></td>
     		<td><img src="images/test2.png" width=256 height=256></td>
-    		<td><img src="images/test3.png" width=256 height=256></td>
     		<td><img src="images/test4.png" width=256 height=256></td>
     		<td><img src="images/test5.png" width=256 height=256></td>
 	</tr>
@@ -66,7 +65,6 @@ After evaluating the autoencoder on the test set, we got a mse score of 0.002191
 		<td>Encoded</td>
 		<td><img src="images/encoded1.png" width=128 height=256></td>
     		<td><img src="images/encoded2.png" width=128 height=256></td>
-    		<td><img src="images/encoded3.png" width=128 height=256></td>
     		<td><img src="images/encoded4.png" width=128 height=256></td>
     		<td><img src="images/encoded5.png" width=128 height=256></td>
 	</tr>
@@ -74,7 +72,6 @@ After evaluating the autoencoder on the test set, we got a mse score of 0.002191
 		<td>Decoded</td>
 		<td><img src="images/decoded1.png" width=256 height=256></td>
     		<td><img src="images/decoded2.png" width=256 height=256></td>
-    		<td><img src="images/decoded3.png" width=256 height=256></td>
     		<td><img src="images/decoded4.png" width=256 height=256></td>
     		<td><img src="images/decoded5.png" width=256 height=256></td>
 	</tr>
