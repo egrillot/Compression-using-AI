@@ -15,6 +15,8 @@ We are going to use the following structure of autoencoder :
 	</tr>
 </table>
 
+As you can see, the aim here is to write a 32x32x3 image as a 32x16 image i.e. to write a 3072 dimensional vector as a 512 dimensional vector.
+
 ## Installation
 
 Please use the command below :
