@@ -47,11 +47,11 @@ encoded=model.encode(data)
 decoded=model.decode(encoded)
 ~~~
 
-In my case, I trained the model on the CIFAR-100 dataset and here are some results. First, during the training, we reached 0.0022 mse score : 
+In my case, I trained the model on the CIFAR-100 dataset and here are some results. First, during the training, we reached 0.0017 mse score in 200 epochs with a batch size of 16 : 
 
 <img src="images/training.png">
 
-After evaluating the autoencoder on the test set, we got a mse score of 0.0021918637212365866. Here are some results on the test set :
+After evaluating the autoencoder on the test set, we got a mse score of 0.001789597561582923. Here are some results on the test set :
 
 <table>
 	<tr>
