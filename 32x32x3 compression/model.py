@@ -38,7 +38,10 @@ class Model:
     self.autoencoder=tf.keras.Model(encoder_input, rebuild)
   
   def summary(self):
-    self.autoencoder.summary()
+    print('encoder : \n')
+    self.encoder.summary()
+    print('\ndecoder : \n')
+    self.decoder.summary()
   
   def train(self, X, optimizer='adamax', batch_size=32, loss='mse', val_split=0.15, epochs=50, display=False, save_path=''):
     X_train=X/255.
