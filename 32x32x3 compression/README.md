@@ -15,7 +15,7 @@ We are going to use the following structure of autoencoder :
 	</tr>
 </table>
 
-As you can see, the aim here is to write a 32x32x3 image as a 32x16 image i.e. to write a 3072 dimensional vector as a 512 dimensional vector.
+As you can see, the aim here is to write a 32x32x3 image as a 32x16 image + a 32x8 image i.e. to write a 3072 dimensional vector as a 768 dimensional vector.
 
 ## Installation
 
@@ -47,11 +47,11 @@ encoded=model.encode(data)
 decoded=model.decode(encoded)
 ~~~
 
-In my case, I trained the model on the CIFAR-100 dataset and here are some results. First, during the training, we reached 0.0017 mse score in 200 epochs with a batch size of 16 : 
+In my case, I trained the model on the CIFAR-100 dataset and here are some results. First, during the training, we reached 0.0012 mse score in 200 epochs with a batch size of 32 : 
 
 <img src="images/training.png">
 
-After evaluating the autoencoder on the test set, we got a mse score of 0.001789597561582923. Here are some results on the test set :
+After evaluating the autoencoder on the test set, we got a mse score of 0.001189597561582923. Here are some results on the test set :
 
 <table>
 	<tr>
@@ -64,11 +64,16 @@ After evaluating the autoencoder on the test set, we got a mse score of 0.001789
 	</tr>
 	<tr>
 		<td>Encoded</td>
-		<td><img src="images/encoded1.png" width=96 height=160></td>
-    		<td><img src="images/encoded2.png" width=96 height=160></td>
-		<td><img src="images/encoded3.png" width=96 height=160></td>
-    		<td><img src="images/encoded4.png" width=96 height=160></td>
-    		<td><img src="images/encoded5.png" width=96 height=160></td>
+		<td><img src="images/encoded1-1.png" width=96 height=160>
+			<img src="images/encoded1-2.png" width=96 height=160></td>
+    		<td><img src="images/encoded2-1.png" width=96 height=160>
+			<img src="images/encoded2-2.png" width=96 height=160></td>
+		<td><img src="images/encoded3-1.png" width=96 height=160>
+			<img src="images/encoded3-2.png" width=96 height=160></td>
+    		<td><img src="images/encoded4-1.png" width=96 height=160>
+			<img src="images/encoded4-2.png" width=96 height=160></td>
+    		<td><img src="images/encoded5-1.png" width=96 height=160>
+			<img src="images/encoded5-2.png" width=96 height=160></td>
 	</tr>
 	<tr>
 		<td>Decoded</td>
