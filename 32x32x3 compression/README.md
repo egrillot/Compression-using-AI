@@ -52,7 +52,7 @@ In my case, I trained the model on the CIFAR-100 dataset and here are some resul
 
 <img src="images/training.png">
 
-After evaluating the autoencoder on the test set, we got a mse score of 0.001189597561582923. Here are some results on the test set :
+After evaluating the autoencoder on the test set, we got a mse score of 0.001181667561582923. Here are some results on the test set :
 
 <table>
 	<tr>
