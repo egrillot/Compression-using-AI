@@ -10,7 +10,8 @@ We are going to use the following structure of autoencoder :
 	</tr>
 	<tr>
 		<td><img src="images/encoder.png"></td>
-    		<td><img src="images/encoded1.png"></td>
+    		<td><img src="images/encoded1-1.png" width=64 height=160>
+			<img src="images/encoded1-2.png" width=96 height=160></td>
     		<td><img src="images/decoder.png"></td>
 	</tr>
 </table>
@@ -64,16 +65,16 @@ After evaluating the autoencoder on the test set, we got a mse score of 0.001189
 	</tr>
 	<tr>
 		<td>Encoded</td>
-		<td><img src="images/encoded1-1.png" width=96 height=160>
-			<img src="images/encoded1-2.png" width=96 height=160></td>
-    		<td><img src="images/encoded2-1.png" width=96 height=160>
-			<img src="images/encoded2-2.png" width=96 height=160></td>
-		<td><img src="images/encoded3-1.png" width=96 height=160>
-			<img src="images/encoded3-2.png" width=96 height=160></td>
-    		<td><img src="images/encoded4-1.png" width=96 height=160>
-			<img src="images/encoded4-2.png" width=96 height=160></td>
-    		<td><img src="images/encoded5-1.png" width=96 height=160>
-			<img src="images/encoded5-2.png" width=96 height=160></td>
+		<td><img src="images/encoded1-1.png" width=64 height=160>
+			<img src="images/encoded1-2.png" width=64 height=160></td>
+    		<td><img src="images/encoded2-1.png" width=64 height=160>
+			<img src="images/encoded2-2.png" width=64 height=160></td>
+		<td><img src="images/encoded3-1.png" width=64 height=160>
+			<img src="images/encoded3-2.png" width=64 height=160></td>
+    		<td><img src="images/encoded4-1.png" width=64 height=160>
+			<img src="images/encoded4-2.png" width=64 height=160></td>
+    		<td><img src="images/encoded5-1.png" width=64 height=160>
+			<img src="images/encoded5-2.png" width=64 height=160></td>
 	</tr>
 	<tr>
 		<td>Decoded</td>
