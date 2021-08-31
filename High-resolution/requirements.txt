@@ -2,3 +2,4 @@ tensorflow
 pickle
 Pillow
 numpy
+matplotlib
