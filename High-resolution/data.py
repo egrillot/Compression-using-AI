@@ -39,12 +39,12 @@ class div2k:
         elif i==2:
           self.HR_val[hrv_count, :, :, :] = format_aux(np.array(PIL.Image.open(path+image)).astype(float), new_shapeH)
           if hrv_count % 50  == 0 :
-            print('loading validation high resolution images : {}/800'.format(hrv_count))  
+            print('loading validation high resolution images : {}/100'.format(hrv_count))  
           hrv_count+=1
         elif i==3:
           self.LR_val[lrv_count, :, :, :] = format_aux(np.array(PIL.Image.open(path+image)).astype(float), new_shapeL)
           if lrv_count % 50  == 0 :
-            print('loading validation low resolution images : {}/800'.format(lrv_count))  
+            print('loading validation low resolution images : {}/100'.format(lrv_count))  
           lrv_count+=1
       i+=1
   
