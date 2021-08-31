@@ -1,0 +1,4 @@
+tensorflow
+pickle
+Pillow
+numpy
