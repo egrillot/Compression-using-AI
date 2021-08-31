@@ -34,17 +34,17 @@ class div2k:
         elif i==1:
           self.LR_train[lrt_count, :, :, :] = format_aux(np.array(PIL.Image.open(path+image)).astype(float), new_shapeL)
           if lrt_count % 50  == 0 :
-            print('loading train high resolution images : {}/800'.format(lrt_count))  
+            print('loading train low resolution images : {}/800'.format(lrt_count))  
           lrt_count+=1
         elif i==2:
           self.HR_val[hrv_count, :, :, :] = format_aux(np.array(PIL.Image.open(path+image)).astype(float), new_shapeH)
           if hrv_count % 50  == 0 :
-            print('loading train high resolution images : {}/800'.format(hrv_count))  
+            print('loading validation high resolution images : {}/800'.format(hrv_count))  
           hrv_count+=1
         elif i==3:
           self.LR_val[lrv_count, :, :, :] = format_aux(np.array(PIL.Image.open(path+image)).astype(float), new_shapeL)
           if lrv_count % 50  == 0 :
-            print('loading train high resolution images : {}/800'.format(lrv_count))  
+            print('loading validation low resolution images : {}/800'.format(lrv_count))  
           lrv_count+=1
       i+=1
   
