@@ -10,10 +10,10 @@ def format_aux(tab, new_shape):
 class div2k:
 
   def __init__(self):
-    self.HR_train = np.zeros((800, 2040, 2040, 3), dtype=float)
-    self.LR_train = np.zeros((800, 510, 510, 3), dtype=float)
-    self.HR_val = np.zeros((100, 2040, 2040, 3), dtype=float)
-    self.LR_val = np.zeros((100, 510, 510, 3), dtype=float)
+    self.HR_train = np.zeros((800, 2048, 2048, 3), dtype=float)
+    self.LR_train = np.zeros((800, 512, 512, 3), dtype=float)
+    self.HR_val = np.zeros((100, 2048, 2048, 3), dtype=float)
+    self.LR_val = np.zeros((100, 512, 512, 3), dtype=float)
   
   def process(self, data_dir):
     paths=[data_dir+'DIV2K_train_HR/', data_dir+'DIV2K_train_LR_bicubic/X4/', data_dir+'DIV2K_valid_HR/', data_dir+'DIV2K_valid_LR_bicubic/X4/']
@@ -22,8 +22,8 @@ class div2k:
     hrv_count = 0
     lrt_count = 0
     lrv_count = 0
-    new_shapeH = (2040, 2404)
-    new_shapeL = (510, 510)
+    new_shapeH = (2048, 2048)
+    new_shapeL = (512, 512)
     for path in paths:
       for image in os.listdir(path):
         if i==0:
