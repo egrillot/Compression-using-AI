@@ -48,6 +48,13 @@ And finally we have succesfully reach our goal :
     <td><img src="images/test_decoded.png"></td>
     <td><img src="images/test_HR_end.png"></td>
   </tr>
+  <tr>
+    <td>shape (1356, 2040, 3)</td>
+    <td>shape (339, 510, 3)</td>
+    <td>shape (32, 32, 128) & (256, 128, 3)</td>
+    <td>shape (339, 510, 3)</td>
+    <td>shape (1356, 2040, 3)</td>
+  </tr>
 </table>
 
 ## Usage
