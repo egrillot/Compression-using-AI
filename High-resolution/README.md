@@ -27,9 +27,9 @@ and train both model on the div2K dataset (using only the LRx4 bicubic package).
 
 ## Results
 
-For the first step, a pre-trained model is available [here](https://github.com/idealo/image-super-resolution/tree/master/weights/sample_weights)
+For the first step, a pre-trained model is available [here](https://github.com/idealo/image-super-resolution/tree/master/weights/sample_weights).
 
-We reach a mse of 0.0044 in 400 epochs for the autoencoding of low-resolution images as you can see below :
+We reach a mse of 0.0044 in 400 epochs for the autoencoding on low-resolution images as you can see below :
 
 <img src="images/training.png">
 
