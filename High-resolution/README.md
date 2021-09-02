@@ -27,6 +27,8 @@ and train both model on the div2K dataset (using only the LRx4 bicubic package).
 
 ## Results
 
+For the first step, a pre-trained model is available [here](https://github.com/idealo/image-super-resolution/tree/master/weights/sample_weights)
+
 We reach a mse of 0.0044 in 400 epochs for the autoencoding of low-resolution images as you can see below :
 
 <img src="images/training.png">
@@ -59,4 +61,23 @@ And finally we have succesfully reach our goal :
 
 ## Usage
 
-Let's begin by using the class div2k available in the 
+Let's start by using the ``div2k`` class available in the file **data.py**. After reading the LICENSE and downloading the div2K dataset, you can use the following command line :
+
+~~~
+dataset = div2k()
+dataset.process(path/to/the/dataset)
+~~~
+
+Then you can get your data as follows :
+
+~~~
+High_resolution_train, Low_resolution_train, High_resolution_validation, Low_resolution_validation = dataset.get_data()
+~~~
+
+Also you can save and load your processed data with the method ``.save_data(directory/path)`` and ``.load_data(directory/path)``. Now you can train your RRDN model, lets instance it with the ``RRDN`` class available in the fle **model.py** :
+
+~~~
+rrdn = RRDN(rdb_blocks_number=6, conv_rdb_number=6, rdb_filter=64, input_shape=(512, 512, 3), task='HR->LR')
+~~~
+
+Here we have 6 [RDB](https://sh-tsang.medium.com/review-rdn-residual-dense-network-super-resolution-9738b8ce51e2) (Residual Dense Block) containing each 6 convolutional layers with 64 map features. This model will reduce a high-resolution image into a low-resolution image but you can do the opposite by changing the ``task`` parameter by ``'LR->HR'`` and adapte your ``input_shape`` parameter. 
