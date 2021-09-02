@@ -10,13 +10,13 @@ For the first step, we are going to use a RRDN structure :
 
 <table>
   <tr>
-    <td>High-resoltuion -> Low-resolution</td>
+    <td>High-resolution -> Low-resolution</td>
   </tr>
   <tr>
     <td><img src="images/HR-_LR.png"></td>
   </tr>
   <tr>
-    <td>Low-resoltuion -> High-resolution</td>
+    <td>Low-resolution -> High-resolution</td>
   </tr>
   <tr>
     <td><img src="images/LR-_HR.png"></td>
@@ -35,7 +35,7 @@ And finally we have succesfully reach our goal :
 
 <table>
   <tr>
-    <td>High-resoltuion</td>
+    <td>High-resolution</td>
     <td>Low-resolution</td>
     <td>Encoded image</td>
     <td>Decoded image</td>
