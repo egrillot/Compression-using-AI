@@ -11,8 +11,14 @@ For the first step, we are going to use a RRDN structure :
 <table>
   <tr>
     <td>High-resoltuion -> Low-resolution</td>
+  </tr>
+  <tr>
     <td><img src="images/HR-_LR.png"></td>
+  </tr>
+  <tr>
     <td>Low-resoltuion -> High-resolution</td>
+  </tr>
+  <tr>
     <td><img src="images/LR-_HR.png"></td>
   </tr>
 </table>
